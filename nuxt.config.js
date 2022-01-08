@@ -25,6 +25,7 @@ export default defineNuxtConfig({
 			{ name: "twitter:description", content: site.description },
 			{ name: "twitter:image", content: `${site.url}/og.png` },
 		],
+		link: [{ rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" }],
 	},
 	buildModules: ["@unocss/nuxt"],
 	unocss: {
