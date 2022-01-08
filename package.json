@@ -6,7 +6,11 @@
 		"start": "node .output/server/index.mjs"
 	},
 	"devDependencies": {
+		"@iconify-json/carbon": "1.0.12",
 		"@unocss/nuxt": "0.20.1",
 		"nuxt3": "3.0.0-27274229.29599f0"
+	},
+	"dependencies": {
+		"cheerio": "1.0.0-rc.10"
 	}
 }
