@@ -53,14 +53,14 @@ export default defineNuxtConfig({
 		],
 		shortcuts: [
 			{
-				card: "bg-light text-dark p-4 h-64 relative rounded",
+				card: "bg-light text-dark p-4 h-72 relative rounded",
 				"card-title": "text-2xl font-bold text-tertiary truncate",
 				"card-body": "mt-2",
 				"card-action": "absolute bottom-4 right-4",
 
 				"btn-icon": "inline-flex items-center gap-4",
 			},
-			[/^btn-(.*)$/, ([, color]) => `bg-${color} text-light font-semibold hover:opacity-75 py-2 px-4 rounded`],
+			[/^btn-(.*)$/, ([, color]) => `bg-${color} text-light font-semibold hover:opacity-75 py-1 px-2 rounded`],
 		],
 	},
 });
