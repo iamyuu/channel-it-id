@@ -1,0 +1,6 @@
+html,
+body,
+#app {
+	color: hsl(236deg, 15%, 21%);
+	background-color: hsl(60deg, 100%, 100%);
+}
