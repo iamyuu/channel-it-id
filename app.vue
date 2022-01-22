@@ -17,8 +17,8 @@
 						{{ category }}
 					</h2>
 
-					<div class="grid grid-cols-auto-w-80 gap-6">
-						<a v-for="item in items" :key="item" :href="item[2][0]" rel="noopener" target="_blank" class="card h-64 group">
+					<div class="grid grid-cols-auto-w-60 sm:grid-cols-auto-w-80 gap-6">
+						<a v-for="item in items" :key="item" :href="item[2][0]" rel="noopener" target="_blank" class="card h-72 sm:h-64 group">
 							<h3 class="card-title group-hover:underline">
 								{{ item[0] }}
 							</h3>
