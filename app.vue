@@ -17,8 +17,8 @@
 						{{ category }}
 					</h2>
 
-					<div class="grid md:grid-cols-auto-w-56 gap-6">
-						<a v-for="item in items" :key="item" :href="item[2][0]" rel="noopener" target="_blank" class="card group">
+					<div class="grid grid-cols-auto-w-80 gap-6">
+						<a v-for="item in items" :key="item" :href="item[2][0]" rel="noopener" target="_blank" class="card h-64 group">
 							<h3 class="card-title group-hover:underline">
 								{{ item[0] }}
 							</h3>
@@ -42,11 +42,14 @@
 			</div>
 		</div>
 	</main>
+	<footer class="text-center text-base text-gray-600 my-8">
+		<p>Kode sumber situs ini tersedia di <a href="https://github.com/iamyuu/channel-it-id" rel="noopener" target="_blank" class="text-dark cursor hover:underline">GitHub</a>.</p>
+		<p>
+			Data diambil dari
+			<a :href="`https://github.com/${SOURCE_REPO}`" rel="noopener" target="_blank" class="text-dark cursor hover:underline">repositori Pak Sandhika Galih</a>.
+		</p>
+	</footer>
 </template>
-
-<style>
-@import "~/lib/style.css";
-</style>
 
 <script setup>
 import { site, SOURCE_REPO } from "./lib/constants";

@@ -47,13 +47,13 @@ export default defineNuxtConfig({
 			[
 				/^grid-cols-auto-w-(\d+)$/,
 				([, val]) => ({
-					"grid-template-columns": `repeat(auto-fit, minmax(${parseInt(val) / 4}rem, 1fr))`,
+					"grid-template-columns": `repeat(auto-fill, minmax(${parseInt(val) / 4}rem, 1fr))`,
 				}),
 			],
 		],
 		shortcuts: [
 			{
-				card: "bg-light text-dark p-4 h-72 relative rounded",
+				card: "bg-light text-dark p-4 relative rounded",
 				"card-title": "text-2xl font-bold text-tertiary truncate",
 				"card-body": "mt-2",
 				"card-action": "absolute bottom-4 right-4",
